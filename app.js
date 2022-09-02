@@ -1,8 +1,13 @@
-const http = require("http");
+const express = require("express");
 
-const server = http.createServer((req, res) => {
-  res.write("Hello World!!");
-  res.end();
+const app = express();
+
+app.use("/users", (req, res, next) => {
+  res.send("<h1>This is Users Page.</h1>");
 });
 
-server.listen(3001);
+app.use("/", (req, res, next) => {
+  res.send("<h1>This is Home Page.</h1>");
+});
+
+app.listen(3001);
