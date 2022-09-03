@@ -8,8 +8,8 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use("/admin", adminRoutes);
 app.use(shopRoutes);
-app.use(adminRoutes);
 
 app.use((req, res, next) => {
   res.send("<h1>Page not found</h1>");
