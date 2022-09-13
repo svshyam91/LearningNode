@@ -1,0 +1,13 @@
+main {
+  margin: 2rem;
+}
+.form-control input {
+  border: 1px solid #5005b3;
+  margin: 1rem 0;
+}
+button {
+  padding: 0.25rem 0.5rem;
+  background-color: #afdccd;
+  border: 1px solid #035f40;
+  border-radius: 2px;
+}
