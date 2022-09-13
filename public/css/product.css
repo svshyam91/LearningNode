@@ -1,13 +1,25 @@
-main {
-  margin: 2rem;
+.product-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
 }
-.form-control input {
-  border: 1px solid #5005b3;
-  margin: 1rem 0;
+
+.product-item {
+    width: 20rem;
+    max-width: 95%;
 }
-button {
-  padding: 0.25rem 0.5rem;
-  background-color: #afdccd;
-  border: 1px solid #035f40;
-  border-radius: 2px;
+
+.product__title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.product__price {
+    text-align: center;
+    color: #4d4d4d;
+    margin-bottom: 0.5rem;
+}
+
+.product__description {
+    text-align: center;
 }
