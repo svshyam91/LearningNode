@@ -13,9 +13,12 @@ router.post("/add-product", (req, res, next) => {
 
 // /admin/add-product => GET
 router.get("/add-product", (req, res, next) => {
-  res.render("add-product", {
+  res.render("add-product.handlebars", {
     pageTitle: "Add Product",
     path: "/admin/add-product",
+    activeAddProduct: true,
+    addProductCSS: true,
+    shopCSS: true,
   });
 });
 
