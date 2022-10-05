@@ -22,7 +22,7 @@ exports.getIndex = (req, res, next) => {
             shopCSS: true,
         });
     });
-}
+};
 
 exports.getCart = (req, res, next) => {
     res.render("shop/cart.ejs", {
@@ -35,5 +35,12 @@ exports.getCheckout = (req, res, next) => {
     res.render("shop/checkout.ejs", {
         pageTitle: "checkout",
         path: "/checkout",
+    });
+};
+
+exports.getOrders = (req, res, next) => {
+    res.render("shop/orders.ejs", {
+        pageTitle: "Orders",
+        path: "/orders",
     });
 };
