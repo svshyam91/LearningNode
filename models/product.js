@@ -22,6 +22,8 @@ module.exports = class Product {
     }
 
     save() {
+        // To generate random number, we have used current
+        this.id = Date.now().toString();
         getProductsFromFile((products) => {
             products.push(this);
             fs.writeFile(p, JSON.stringify(products), (err) => {
